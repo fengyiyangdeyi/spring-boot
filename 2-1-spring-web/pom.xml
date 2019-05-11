@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lyf</groupId>
-    <artifactId>1-1-spring-web</artifactId>
+    <artifactId>2-1-spring-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>1-1-spring-web</name>
+    <name>2-1-spring-web</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

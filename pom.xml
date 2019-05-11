@@ -10,12 +10,12 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>1-1-spring-web</module>
         <module>1-2-swagger</module>
         <module>1-3-restful</module>
         <module>1-4-jpa</module>
         <module>1-5-mybatis</module>
         <module>1-6-logback</module>
         <module>1-7-maven</module>
+        <module>2-1-spring-web</module>
     </modules>
 </project>
