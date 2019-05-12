@@ -16,6 +16,7 @@
         <module>1-5-mybatis</module>
         <module>1-6-logback</module>
         <module>1-7-maven</module>
+        <module>1-7-1-muti-env-config</module>
         <module>2-1-spring-web</module>
     </modules>
 </project>
