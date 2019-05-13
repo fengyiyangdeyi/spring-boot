@@ -1,9 +1,7 @@
 package com.lyf.swagger.controller;
 
 import com.lyf.swagger.entity.User;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
-import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.*;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -51,6 +49,11 @@ public class UserController {
 
     @ApiOperation(value = "删除用户", notes = "根据url的id来指定删除对象")
     @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Long")
+    @ApiResponses({
+            @ApiResponse(code = 400, message = "请求参数没填好"),
+            @ApiResponse(code = 404, message = "请求路径没有或页面跳转路径不对"),
+            @ApiResponse(code = 444, message = "我是新加的")
+    })
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public String deleteUser(@PathVariable Long id) {
         users.remove(id);
