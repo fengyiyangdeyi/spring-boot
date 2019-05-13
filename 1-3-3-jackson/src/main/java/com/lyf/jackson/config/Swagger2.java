@@ -1,4 +1,4 @@
-package com.lyf.restful.config;
+package com.lyf.jackson.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

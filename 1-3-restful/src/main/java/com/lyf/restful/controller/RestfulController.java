@@ -9,6 +9,7 @@ import java.util.*;
  * @author liyingfeng
  */
 @RestController
+@RequestMapping("restful")
 public class RestfulController {
 
     static Map<Long, User> users = Collections.synchronizedMap(new HashMap<>());
