@@ -34,7 +34,73 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.swagger</groupId>
+                    <artifactId>swagger-models</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-models</artifactId>
+            <version>1.5.21</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+        </dependency>
     </dependencies>
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <profileActive>dev</profileActive>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>sit</id>
+            <properties>
+                <profileActive>sit</profileActive>
+            </properties>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>uat</id>
+            <properties>
+                <profileActive>uat</profileActive>
+            </properties>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <profileActive>prod</profileActive>
+            </properties>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
+
 
     <build>
         <plugins>
@@ -43,6 +109,24 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>application-${profileActive}.properties</include>
+                    <include>**/application.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
 
 </project>
