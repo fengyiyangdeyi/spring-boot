@@ -17,6 +17,7 @@
         <module>1-3-3-jackson</module>
         <module>1-3-4-fastjson</module>
         <module>1-3-5-aop</module>
+        <module>1-3-6-servlet</module>
         <module>1-4-jpa</module>
         <module>1-4-1-druid</module>
         <module>1-5-mybatis</module>
@@ -27,5 +28,6 @@
         <module>1-7-3-nexus</module>
         <module>1-8-junit</module>
         <module>2-1-spring-web</module>
+        <module>4-1-shiro</module>
     </modules>
 </project>
