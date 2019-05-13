@@ -1,4 +1,4 @@
-package com.lyf.mutienvconfig;
+package com.lyf.multienvconfig;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

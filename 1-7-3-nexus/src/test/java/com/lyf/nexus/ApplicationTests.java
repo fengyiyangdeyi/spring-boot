@@ -1,4 +1,4 @@
-package com.lyf.mutienvconfig;
+package com.lyf.nexus;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

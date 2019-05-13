@@ -1,4 +1,4 @@
-package com.lyf.mutienvconfig.config;
+package com.lyf.multienvconfig.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

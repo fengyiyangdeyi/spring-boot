@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lyf</groupId>
-    <artifactId>1-7-1-muti-env-config</artifactId>
+    <artifactId>1-7-1-multi-env-config</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>1-7-1-muti-env-config</name>
+    <name>1-7-1-multi-env-config</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
