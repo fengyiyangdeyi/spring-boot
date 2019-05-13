@@ -6,7 +6,30 @@
 
     <groupId>com.lyf</groupId>
     <artifactId>1-7-maven</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>maven-one</module>
+        <module>maven-two</module>
+    </modules>
 
-    
+    <dependencies>
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <version>1.5.21</version>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.15</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
 </project>
