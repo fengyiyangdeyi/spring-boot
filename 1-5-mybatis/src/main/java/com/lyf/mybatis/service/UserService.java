@@ -2,6 +2,7 @@ package com.lyf.mybatis.service;
 
 import com.lyf.mybatis.dao.UserMapper;
 import com.lyf.mybatis.entity.Person;
+import com.lyf.mybatis.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +18,10 @@ public class UserService {
 
     public Person selectUser(int id) {
         return userMapper.selectUser(id);
+    }
+
+    public User helloUserXml(int id) {
+        return userMapper.sel(id);
     }
 
 }
